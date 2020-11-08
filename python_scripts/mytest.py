@@ -41,7 +41,8 @@ class D:
 
 def main():
     cwd = os.getcwd()
-    hp.number_sorting()
+    # hp.number_sorting()
+    hp.find_armstrong(153)
     #test commit removed
 
     # hp.looong_int(10000000)
