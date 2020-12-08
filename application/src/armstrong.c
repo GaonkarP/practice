@@ -1,5 +1,5 @@
 #include <stdio.h>
-int main()
+int armstrong()
 {
 int num, original, rem, sum = 0;
 printf("Enter a three digit Number: ");

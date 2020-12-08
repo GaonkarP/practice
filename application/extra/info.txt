@@ -21,3 +21,6 @@ armclang --target=arm-arm-none-eabi -mcpu=cortex-a53 hello.c
 GCC
 
 gcc -Wall hello.c -o hello
+
+----------------------------------------------------------------------------
+C:\GAP7KOR\Tools\cmake\bin\cmake.exe -E cmake_depends "MinGW Makefiles"
