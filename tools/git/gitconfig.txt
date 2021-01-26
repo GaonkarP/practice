@@ -1,3 +1,7 @@
+[user]
+	name = Praveenkumar Gaonkar
+	email = pksgaon@gmail.com
+
 [diff]
     tool = bc3
 [difftool "bc3"]
