@@ -93,17 +93,15 @@ funFibGenerator()
 
 # timeTaken(funFibGenerator) = @timeTaken
 
-
-
-
 print("-------******--------")
 
 def fibpropergen(first=0, second=1, n=10):
-    temp = 0
+    temp = "a"
     a, b = first, second
     print(__file__)
     print(__name__)
     print(__name__())
+    temp.isascii
     
 
     while(a < 10):
