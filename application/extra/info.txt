@@ -1,0 +1,26 @@
+#To create an executable for an AArch64 target in a single step:
+
+armclang --target=aarch64-arm-none-eabi hello.c
+
+-c
+#This command creates an executable, a.out.
+
+
+To create an executable for an AArch32 target in a single step:
+
+armclang --target=arm-arm-none-eabi -mcpu=cortex-a53 hello.c
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------------
+GCC
+
+gcc -Wall hello.c -o hello
+
+----------------------------------------------------------------------------
+C:\GAP7KOR\Tools\cmake\bin\cmake.exe -E cmake_depends "MinGW Makefiles"

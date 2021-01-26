@@ -50,3 +50,14 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+#--------------------------@#
+#mysettings
+.vscode
+__pycache__
+
+build
+
+
+*.bin
+*.axf
