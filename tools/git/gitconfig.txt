@@ -1,0 +1,21 @@
+[diff]
+    tool = bc3
+[difftool "bc3"]
+    path = C:/Program Files/Beyond Compare 4/BComp.exe
+[alias]
+    st = status
+    sup = submodule update --init --recursive --force
+    a = add --all
+    cm = commit -m
+    ft = fetch
+    cln = clean -xffd
+    pa = pull && submodule update --init --recursive
+[mergetool "bc3"]
+    path = C:/Program Files/Beyond Compare 4/BComp.exe
+[pull]
+    rebase = true
+[filter "lfs"]
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
