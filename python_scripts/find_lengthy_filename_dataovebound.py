@@ -1,34 +1,6 @@
-#! /usr/bin/env python2
+#! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
-#//=============================================================================
-#//  C O P Y R I G H T
-#//-----------------------------------------------------------------------------
-#/// @copyright (c) 2019 by Robert Bosch GmbH. All rights reserved.
-#//
-#//  The reproduction, distribution and utilization of this file as
-#//  well as the communication of its contents to others without express
-#//  authorization is prohibited. Offenders will be held liable for the
-#//  payment of damages. All rights reserved in the event of the grant
-#//  of a patent, utility model or design.
-#//=============================================================================
-#//  P R O J E C T   I N F O R M A T I O N
-#//-----------------------------------------------------------------------------
-#//     Projectname: ATV
-#//  Target systems: R7/A53
-#//       Compilers: Python, ARMv6.6.1
-#//=============================================================================
-#//  I N I T I A L   A U T H O R   I D E N T I T Y
-#//-----------------------------------------------------------------------------
-#//        Name: Praveenkumar Gaonkar (RBEI/ESD-FR3)
-#//  Department: RBEI/ESD-FR3
-#//=============================================================================
-#/// @file gensource_oss.py
-#/// @brief Builds all binaries and signs the delivered binaries.
-#/// @generatedcode no
-#/// @copyright Robert Bosch
-#/// @author Praveenkumar Gaonkar (RBEI/ESD-FR3)
-#//=============================================================================
 import os
 import sys
 import argparse
