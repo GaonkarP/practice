@@ -38,7 +38,20 @@ def configLogger(logfile='Logfile.log'):
     logger.addHandler(ch)
 
     return logger
-    
+def command_executor(cmd):
+    cmd_output = subprocess.run(
+        [
+            "python",
+            "hckr_rnk_ref.py",
+            "--infile=test.txt",
+            "--varb=praveen"
+        ],
+        capture_output=True,
+        shell=True,
+        text=True)
+    output_string = cmd_output.stdout
+    exit_code = cmd_output.stderr
+    # output_string= output_string.decode("utf-8")
 
 def get_args():
     desc = 'argument parser'
