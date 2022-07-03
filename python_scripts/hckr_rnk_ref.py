@@ -12,6 +12,11 @@ if getattr(sys, "frozen", False):
     current_dir = os.path.dirname(sys.executable)
 else:
     current_dir = os.path.dirname(os.path.abspath(__file__))
+print(f"current dir-->{current_dir}")
+class p:
+    def __init__(self):
+        #paths related to root directory only
+        self.test_string = "IN priveate class"
     
 def configLogger(logfile='Logfile.log'):
     # create logger
