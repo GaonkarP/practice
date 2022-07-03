@@ -62,12 +62,16 @@ def get_file_args(argum):
                         help='bar b')
     return parser.parse_args(argum)
 
-def file_operation(outfile):
-    
+def file_operation(outfile, infile):    
     with open(outfile, 'w') as writefile:
         writefile.write("checkinng file operation")
     if os.path.isfile(outfile):
         log.info(f"file created")
+    if os.path.isfile(infile):
+        log.info(f"file available")
+    with open(infile, 'w') as readfile:
+#         fread = readfile.readlines()
+        fread = readfile.read()
 
 def checkfile(filename):
     if os.path.isfile(filename):
