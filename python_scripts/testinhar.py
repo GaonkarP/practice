@@ -1,5 +1,4 @@
 
-import regex as re
 
 def countwords():
 
