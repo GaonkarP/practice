@@ -14,6 +14,7 @@ pipeline {
             steps {
                 echo 'Testing..'
                 if isUnix(){
+                    echo 'Unix Agent..'
                     sh label: 'Build', returnStatus: true, script: 'python python_scripts/day_detail.py'
                 }else{
                     bat label: 'Build', returnStatus: true, script: 'python python_scripts/day_detail.py'
