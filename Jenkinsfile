@@ -13,7 +13,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
-                if isUnix(){
+                if(isUnix)(){
                     echo 'Unix Agent..'
                     sh label: 'Build', returnStatus: true, script: 'python python_scripts/day_detail.py'
                 }else{
