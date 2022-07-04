@@ -6,12 +6,11 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
-                
+                echo 'Building..'                
             }
         }
         stage('Test') {
-            steps {
+            steps {script{
                 echo 'Testing..'
                 if(isUnix()){
                     echo 'Unix Agent..'
@@ -19,7 +18,7 @@ pipeline {
                 }else{
                     bat label: 'Build', returnStatus: true, script: 'python python_scripts/day_detail.py'
                 }
-            }
+            }}
         }
         stage('Deploy') {
             steps {
