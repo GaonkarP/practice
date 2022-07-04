@@ -38,7 +38,7 @@ def sleeping(name = "", waittime = 2):
 
 def os_details():
     print(f"\n\n{'-'*10}Operating System Details{'-'*10}")
-    # print(os.name)
+    print(f"user:{os.getlogin()}")
     print(platform.system())
     # print(platform.system())
     print(platform.release())
