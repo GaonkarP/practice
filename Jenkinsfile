@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo 'Building..'
                 echo 'test'
-                sh label: 'Build', returnStatus: true, script: 'pyinstaller python_scripts/day_detail.py'
+                sh label: 'Build', returnStatus: true, script: 'python python_scripts/day_detail.py'
             }
         }
         stage('Test') {
