@@ -5,6 +5,7 @@ import os
 import platform
 from datetime import datetime
 from datetime import date
+import getpass
 
 VERSION = '1.0.0'
 
@@ -38,7 +39,7 @@ def sleeping(name = "", waittime = 2):
 
 def os_details():
     print(f"\n\n{'-'*10}Operating System Details{'-'*10}")
-    print(f"user:{os.getlogin()}")
+    print(f"user:{getpass.getuser()}")
     print(platform.system())
     # print(platform.system())
     print(platform.release())
