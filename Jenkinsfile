@@ -1,22 +1,23 @@
 pipeline {
-    agent any
+    agent {
+        label 'linuxP'
+    }
 
     stages {
         stage('Build') {
             steps {
                 echo 'Building..'
-                echo 'test'
-                sh label: 'Build', returnStatus: true, script: 'python python_scripts/day_detail.py'
+                
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing..'
-            }
-        }
-        stage('Run') {
-            steps {
-                echo 'Running in test directory....'
+                if isUnix(){
+                    sh label: 'Build', returnStatus: true, script: 'python python_scripts/day_detail.py'
+                }else{
+                    bat label: 'Build', returnStatus: true, script: 'python python_scripts/day_detail.py'
+                }
             }
         }
         stage('Deploy') {
