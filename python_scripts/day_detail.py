@@ -72,7 +72,7 @@ def my_detail(birth_date):
 def main():
     birth_date = "1991-03-01"
     os_details()
-    # sleeping()
+    sleeping()
     year_detail()
     # my_detail(birth_date)
     
